@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gesture Control Jarvis</title>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #000;
+        color: #0ef;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .hud-glow {
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+      }
+      canvas {
+        touch-action: none;
+      }
+      #root {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "three": "https://esm.sh/three@0.170.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@9.0.0-rc.0?external=react,react-dom,three",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.121.4?external=react,react-dom,three,@react-three/fiber",
+    "lucide-react": "https://esm.sh/lucide-react@0.460.0?external=react",
+    "@mediapipe/hands": "https://esm.sh/@mediapipe/hands@0.4.1675469240",
+    "@mediapipe/camera_utils": "https://esm.sh/@mediapipe/camera_utils@0.3.1675466862",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
